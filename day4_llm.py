@@ -31,6 +31,7 @@ def main() -> None:
             {"role": "user", "content": "Explain what an API is in one sentence."},
         ],
         temperature=0,
+        max_tokens=200,
     )
 
     # 6. Parse the reply using the SAME drill-down path you learned on Day 3.
