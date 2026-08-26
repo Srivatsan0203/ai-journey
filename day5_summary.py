@@ -57,6 +57,12 @@ def check_winner(result: dict, race_data: dict) -> bool:
     return result["winner"].strip().lower() == race_data["podium"][0]["driver"].strip().lower()
 
 
+def check_team(result: dict, race_data: dict) -> bool:
+    # The AI's claimed winning team should match the ACTUAL winning team in the source data
+    # (the team of the driver at podium position 1).
+    return result["winning_team"].strip().lower() == race_data["podium"][0]["team"].strip().lower()
+
+
 def main() -> None:
     client = build_client()
     result = summarize_race(client, RACE_DATA)
@@ -66,6 +72,8 @@ def main() -> None:
     print("Team:  ", result["winning_team"])
     print("Summary:", result["summary"])
     print("Winner check passed: ", check_winner(result, RACE_DATA))
+    print("Team check passed: ", check_team(result, RACE_DATA))
+
 
 if __name__ == "__main__":
     main()
