@@ -25,6 +25,7 @@ This repo tracks that learning journey, one small, working project at a time.
 | 3 | `day3_data.py` | dicts, lists, navigating nested JSON |
 | 4 | `day4_llm.py` | **first live LLM call**, system prompts, temperature, token usage |
 | 5 | `day5_summary.py` | **structured JSON output**, F1 race summaries, first factual-accuracy check (eval) |
+| 6 | `day6_fewshot.py` | **few-shot prompting**, zero-shot vs few-shot, constraining output to reduce hallucination |
 
 ## Running it locally
 
