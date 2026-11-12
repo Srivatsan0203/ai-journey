@@ -26,6 +26,7 @@ This repo tracks that learning journey, one small, working project at a time.
 | 4 | `day4_llm.py` | **first live LLM call**, system prompts, temperature, token usage |
 | 5 | `day5_summary.py` | **structured JSON output**, F1 race summaries, first factual-accuracy check (eval) |
 | 6 | `day6_fewshot.py` | **few-shot prompting**, zero-shot vs few-shot, constraining output to reduce hallucination |
+| 7 | `day7_schema.py`, `day7_break.py` | **Pydantic schema validation** — enforce LLM output shape/types, fail loud on bad data |
 
 ## Running it locally
 
